@@ -9,10 +9,35 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="请输入六位数交易密码"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
 
+    <io.github.brady2037.rounded.gridpasswordview.gridpasswordview.GridPasswordView
+        android:id="@+id/inputTradingPwdPwView"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        app:lineColor="@color/grid_password_line_color"
+        app:lineWidth="1dp"
+        app:passwordLength="6"
+        app:passwordType="numberPassword"
+        app:textSize="25sp"></io.github.brady2037.rounded.gridpasswordview.gridpasswordview.GridPasswordView>
 </android.support.constraint.ConstraintLayout>
