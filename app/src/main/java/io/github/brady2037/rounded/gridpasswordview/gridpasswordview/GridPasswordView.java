@@ -46,6 +46,7 @@ public class GridPasswordView extends LinearLayout implements PasswordView {
     private int lineWidth;
     private int lineColor;
     private int gridColor;
+    private int cornerRadius = 16;//边框圆角
     private Drawable lineDrawable;
     private Drawable outerLineDrawable;
 
@@ -185,7 +186,7 @@ public class GridPasswordView extends LinearLayout implements PasswordView {
         GradientDrawable drawable = new GradientDrawable();
         drawable.setColor(gridColor);
         drawable.setStroke(lineWidth, lineColor);
-        drawable.setCornerRadius(16);//边框圆角
+        drawable.setCornerRadius(cornerRadius);//边框圆角
         return drawable;
     }
 
